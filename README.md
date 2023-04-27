@@ -31,16 +31,16 @@ Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** �
 O Problema em análise consiste na implementação de três modelos de caminhamento em uma matriz labirinto;
 A matriz tem tamanho N x N e contém quatro tipos de elementos: 
 	
-- item de passagem livre (1); 
-- item de dano ('*'); 
-- paredes ('#');
-- ponto de parada ('?') que é colocado aleatoriamente na matriz;
+- Item de passagem livre (1); 
+- Item de dano ('*'); 
+- Paredes ('#');
+- Ponto de parada ('?') que é colocado aleatoriamente na matriz;
 	
-Os modelos de caminhamento são: Randômico (já realizado e precisa ser adaptado), em largura (BFS) e em profundidade (DFS);
+Os modelos de caminhamento são: **Randômico** (já realizado e precisa ser adaptado), em **Largura (BFS)** e em **Profundidade (DFS)**;
 	
 O objetivo é percorrer toda a matriz a partir do ponto de partida até o ponto de parada, evitando as paredes e os itens de dano;
 	
-Se o algoritmo encontrar um item de dano, ele deve retornar ao ponto de partida e reiniciar o caminhamento, demarcando o item de passagem livre (1) na posição do dano;
+Se o algoritmo encontrar um item de dano ('*'), ele deve retornar ao ponto de partida e reiniciar o caminhamento, demarcando o item de passagem livre (1) na posição do dano;
 	
 Isso adiciona um custo adicional ao processo e permite avaliar a composição da entrada, o modelo de execução e o comportamento do algoritmo;
 		
