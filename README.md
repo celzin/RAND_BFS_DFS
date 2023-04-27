@@ -68,7 +68,7 @@ Primeiramente, para o correto funcionamento do programa é necessário incluir u
 <img src="imgs/exemplo_input" width="250"/> 
 </p>
 <p align="center">
-<em>Imagem 2: Descrição.</em>
+<em>Imagem 2: Exemplo de entrada no formato desejado</em>
 </p>
 
 <p align="justify">
