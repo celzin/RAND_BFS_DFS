@@ -65,7 +65,7 @@ Primeiramente, para o correto funcionamento do programa é necessário incluir u
 </p>
 
 <p align="center">
-<img src="imgs/exemplo_input" width="250"/> 
+<img src="imgs/exemplo_input.png" width="250"/> 
 </p>
 <p align="center">
 <em>Imagem 2: Exemplo de entrada no formato desejado.</em>
