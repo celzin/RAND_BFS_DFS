@@ -1,4 +1,9 @@
-# BFS e DFS
+# 
+<div style="display: inline_block">
+  <img align="center" alt="VS" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+  <img align="center" alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img align="center" alt="C" src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+</div><br/>
 
 # O que é BFS
 <div align="justify">
@@ -21,6 +26,29 @@ Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** �
 </div>
 
 # Análise do Problema
+<div align="justify">
+
+O Problema em análise consiste na implementação de três modelos de caminhamento em uma matriz labirinto;
+A matriz tem tamanho N x N e contém quatro tipos de elementos: 
+	
+- item de passagem livre (1); 
+- item de dano ('*'); 
+- paredes ('#');
+- ponto de parada ('?') que é colocado aleatoriamente na matriz;
+	
+Os modelos de caminhamento são: Randômico (já realizado e precisa ser adaptado), em largura (BFS) e em profundidade (DFS);
+	
+O objetivo é percorrer toda a matriz a partir do ponto de partida até o ponto de parada, evitando as paredes e os itens de dano;
+	
+Se o algoritmo encontrar um item de dano, ele deve retornar ao ponto de partida e reiniciar o caminhamento, demarcando o item de passagem livre (1) na posição do dano;
+	
+Isso adiciona um custo adicional ao processo e permite avaliar a composição da entrada, o modelo de execução e o comportamento do algoritmo;
+		
+A matriz deve ser grande, com tamanho em torno de 50 x 50 ou maior, para permitir testes mais abrangentes;
+	
+O objetivo final é avaliar a implementação e o desempenho dos modelos de caminhamento em relação aos desafios impostos pela matriz labirinto.
+
+</div>
 
 # Solução do Problema
 
