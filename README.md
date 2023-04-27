@@ -65,10 +65,10 @@ Primeiramente, para o correto funcionamento do programa é necessário incluir u
 </p>
 
 <p align="center">
-<img src="" width="250"/> 
+<img src="imgs/exemplo_input" width="250"/> 
 </p>
 <p align="center">
-<em>Imagem X: Descrição.</em>
+<em>Imagem 2: Descrição.</em>
 </p>
 
 <p align="justify">
