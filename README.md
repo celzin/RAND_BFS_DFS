@@ -38,6 +38,17 @@ A matriz tem tamanho N x N e contém quatro tipos de elementos:
 - **Item de dano ('*')**; 
 - **Paredes ('#')**;
 - **Ponto de parada ('?')** que é **colocado aleatoriamente** na matriz;
+
+</div>
+
+<p align="center">
+<img src="imgs/exemplo_input.png" width="250"/> 
+</p>
+<p align="center">
+<em>Imagem 1: Imagem esquemática do labirinto.</em>
+</p>
+
+<div align="justify">
 	
 O objetivo é percorrer toda a matriz a partir do ponto de partida até o ponto de parada, evitando as paredes e os itens de dano;
 	
