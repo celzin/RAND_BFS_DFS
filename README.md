@@ -14,7 +14,7 @@ Os modelos de caminhamento são: **Randômico** (já realizado e precisa ser ada
 	
 A matriz tem tamanho N x N e contém quatro tipos de elementos: 
 	
-- **Item de passagem livre ( 1 )**; 
+- **Passagem livre ( 1 )**; 
 - **Item de dano ('*')**; 
 - **Paredes ('#')**;
 - **Ponto de parada ('?')** que é **colocado aleatoriamente** na matriz;
@@ -86,7 +86,12 @@ Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** �
 Primeiramente, para o correto funcionamento do programa é necessário incluir um arquivo nomeado preferencialmente de <code>input.data</code> dentro da pasta <code>dataset</code>, devendo seguir o seguinte formato:
 	
 - Em sua primeira linha: os valores NxN que serão assumidos pelas matrizes geradas
-- Logo em seguida as matrizes espaçadas conforme o exemplo abaixo
+- Logo em seguida a matriz com os elementos espaçados, na seguinte ideia:
+
+	- **Passagem livre ( 1 )**; 
+	- **Item de dano ('*')**; 
+	- **Paredes ('#')**;
+	- **Ponto de parada ('?')**.
 </p>
 
 <p align="center">
