@@ -51,6 +51,13 @@ O objetivo final é avaliar a implementação e o desempenho dos modelos de cami
 	
 </div>
 
+<p align="center">
+<img src="imgs/bfs.png" width="350"/> 
+</p>
+<p align="center">
+<em>Imagem 1: Imagem esquemática do labirinto.</em>
+</p>
+
 # O que é DFS?
 <div align="justify">
 	
@@ -61,6 +68,13 @@ O objetivo final é avaliar a implementação e o desempenho dos modelos de cami
 Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** é que o **DFS** explora um ramo inteiro do grafo antes de retroceder e visitar outro ramo, enquanto o BFS explora todos os vértices a uma determinada distância do vértice inicial antes de passar para o próximo nível de distância.
 	
 </div>
+
+<p align="center">
+<img src="imgs/dfs.png" width="350"/> 
+</p>
+<p align="center">
+<em>Imagem 1: Imagem esquemática do labirinto.</em>
+</p>
 
 # Solução do Problema
 
