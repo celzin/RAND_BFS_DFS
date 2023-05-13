@@ -55,7 +55,7 @@ O objetivo final é avaliar a implementação e o desempenho dos modelos de cami
 <img src="imgs/bfs.png" width="350"/> 
 </p>
 <p align="center">
-<em>Imagem 1: Imagem esquemática do labirinto.</em>
+<em>Imagem 2: Busca em Largura.</em>
 </p>
 
 # O que é DFS?
@@ -73,7 +73,7 @@ Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** �
 <img src="imgs/dfs.png" width="350"/> 
 </p>
 <p align="center">
-<em>Imagem 1: Imagem esquemática do labirinto.</em>
+<em>Imagem 3: Busca em Profundidade.</em>
 </p>
 
 # Solução do Problema
@@ -93,7 +93,7 @@ Primeiramente, para o correto funcionamento do programa é necessário incluir u
 <img src="imgs/exemplo_input.png" width="250"/> 
 </p>
 <p align="center">
-<em>Imagem 2: Exemplo de entrada no formato desejado.</em>
+<em>Imagem 4: Exemplo de entrada no formato desejado.</em>
 </p>
 
 <p align="justify">
