@@ -86,7 +86,7 @@ Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** �
 Primeiramente, para o correto funcionamento do programa é necessário incluir um arquivo nomeado preferencialmente de <code>input.data</code> dentro da pasta <code>dataset</code>, devendo seguir o seguinte formato:
 	
 - Em sua primeira linha: os valores NxN que serão assumidos pelas matrizes geradas
-- Logo em seguida a matriz com os elementos espaçados, na seguinte ideia:
+- Logo em seguida, dispõe-se a matriz com os elementos espaçados, na seguinte ideia:
 
 	- **Passagem livre ( 1 )**; 
 	- **Item de dano ('*')**; 
