@@ -42,7 +42,7 @@ A matriz tem tamanho N x N e contém quatro tipos de elementos:
 </div>
 
 <p align="center">
-<img src="imgs/exemplo_input.png" width="250"/> 
+<img src="imgs/bdfs.png" width="350"/> 
 </p>
 <p align="center">
 <em>Imagem 1: Imagem esquemática do labirinto.</em>
