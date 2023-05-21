@@ -78,6 +78,12 @@ Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** �
 
 # Solução do Problema
 
+## Random
+
+## BFS
+
+## DFS
+
 # Conclusão
 
 # Compilação e Execução 
