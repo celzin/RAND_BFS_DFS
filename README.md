@@ -80,6 +80,12 @@ Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** �
 
 ## Random
 
+<p align="justify">
+
+O código implementa é basicamente o mesmo implementado no trabalho [Labirinto-Recorrente](https://github.com/phpdias/labirinto-recorrente), um algoritmo para gerar e resolver um labirinto aleatório, com algumas adaptações. A função <code>aleatoria</code> gera um labirinto aleatório e a função <code>checkMovimento</code> verifica se um determinado movimento é válido. A lógica principal está em um loop que continua até o jogador alcançar o destino no labirinto. Durante o loop, são feitos movimentos aleatórios e as posições são atualizadas de acordo. Se o jogador encontra um inimigo, o inimigo é removido e o jogador retorna à posição inicial. A quantidade de movimentos é registrada e, ao final, é exibida uma mensagem indicando se o jogador alcançou o destino ou não.
+	
+</p>
+
 ## BFS
 
 ## DFS
