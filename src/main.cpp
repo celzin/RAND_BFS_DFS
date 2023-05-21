@@ -1,85 +1,54 @@
 #include "include/labirinto.hpp"
-
-void readFile(vector<string> &matriz){
-    ifstream myfile("dataset/input.data");
-    string line;
-
-    if(myfile.is_open()){
-        while(getline(myfile, line))
-            matriz.push_back(line);
-        myfile.close();
-    } else cout << "Não foi possível abrir o arquivo" << endl;
-}
-
-int tokenizarPrimeiraLinha(string text){
-    char del = ' ';
-
-    stringstream sstream(text);
-    string token;
-
-    while(getline(sstream, token, del))
-        return stoi(token);
-    return 0;
-}
-
-void tokenizar(string text, int **labirinto, int counterLine){
-    char del = ' ';
-    int coluna = 0;
-
-    stringstream sstream(text);
-    string token;
-    int valor = 0;
-
-    while(getline(sstream, token, del)){
-
-        if(token.compare("*") == 0){
-            valor = INIMIGO;
-        } else if(token.compare("#") == 0){
-            valor = PAREDE;
-        } else if(token.compare("?") == 0){
-            valor = DESTINO;
-        } else{
-            valor = CAMINHO;
-        }
-
-        labirinto[counterLine][coluna] = valor;
-        coluna++;
-    }
-}
+#include "include/arquivo.hpp"
+#include <string.h>
 
 int main(){
+    Arquivo arquivo;
+
     vector<string> matriz;
-    readFile(matriz);
+    arquivo.readFile(matriz);
     int aux = 0;
     int N = 0;
     int **labirinto;
+    int **labirinto1;
+    int **labirinto2;
     int counterLine = 0;
 
     for(string variavel : matriz){
         if(aux == 0){
             aux = 1;
-            N = tokenizarPrimeiraLinha(variavel);
+            N = arquivo.tokenizarPrimeiraLinha(variavel);
 
             labirinto = (int **)malloc(sizeof(int *) * N);
+            labirinto1 = (int **)malloc(sizeof(int *) * N);
+            labirinto2 = (int **)malloc(sizeof(int *) * N);
+
             for(int i = 0; i < N; i++){
                 labirinto[i] = (int *)malloc(sizeof(int) * N);
+                labirinto1[i] = (int *)malloc(sizeof(int) * N);
+                labirinto2[i] = (int *)malloc(sizeof(int) * N);
             }
         } else{
-            tokenizar(variavel, labirinto, counterLine);
+            arquivo.tokenizar(variavel, labirinto, counterLine);
             counterLine++;
+        }
+    }
+
+    for(int i = 0; i < N; i++){
+        for(int j = 0; j < N; j++){
+            labirinto1[i][j] = labirinto[i][j];
+            labirinto2[i][j] = labirinto[i][j];
         }
     }
 
     Labirinto lab(N);
 
-    for(int i = 0; i < N; i++){
-        for(int j = 0; j < N; j++){
-            cout << labirinto[i][j] << " ";
-        }
-        cout << endl;
-    }
+    FILE *file_output = fopen("dataset/output.data", "w");
+    fclose(file_output);
 
-    lab.BFS(labirinto);
+    lab.aleatoria(labirinto);
+    lab.BFS(labirinto2);
+    lab.DFS(labirinto1);
 
     return 0;
 }

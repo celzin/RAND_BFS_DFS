@@ -1,0 +1,15 @@
+==========================
+
+Tipo de Labirinto: Aleatório
+Tempo de execução: 0.005666 segundos
+Quantidade de passos: 592
+==========================
+
+Tipo de Labirinto: BFS
+Tempo de execução: 0.000517 segundos
+Quantidade de passos: 28
+==========================
+
+Tipo de Labirinto: DFS
+Tempo de execução: 0.000267 segundos
+Quantidade de passos: 24
