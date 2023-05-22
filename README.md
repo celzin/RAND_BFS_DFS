@@ -95,9 +95,9 @@ O código implementa é basicamente o mesmo implementado no trabalho [Labirinto-
 </div>
 
 ## BFS
-
+- Alterar aqui
 ## DFS
-
+- Alterar aqui
 # Conclusão
 
 # Compilação e Execução 
