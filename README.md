@@ -158,75 +158,75 @@ Durante cada iteração, o tempo de execução do algoritmo, o caminho percorrid
   </tr>
   <tr>
     <td align="center">1</td>
-    <td align="center">2.13</td>
-    <td align="center">1.82</td>
-    <td align="center">3.01</td>
+    <td align="center">66.92</td>
+    <td align="center">79.45.</td>
+    <td align="center">0.94</td>
   </tr>
   <tr>
     <td align="center">2</td>
-    <td align="center">1.94</td>
-    <td align="center">2.09</td>
-    <td align="center">2.56</td>
+    <td align="center">79.45</td>
+    <td align="center">16.79</td>
+    <td align="center">1.30</td>
   </tr>
   <tr>
     <td align="center">3</td>
-    <td align="center">2.31</td>
-    <td align="center">1.98</td>
-    <td align="center">3.15</td>
+    <td align="center">80.70</td>
+    <td align="center">17.74</td>
+    <td align="center">0.86</td>
   </tr>
   <tr>
     <td align="center">4</td>
-    <td align="center">1.76</td>
-    <td align="center">2.35</td>
-    <td align="center">2.82</td>
+    <td align="center">75.85</td>
+    <td align="center">16.59</td>
+    <td align="center">0.85</td>
   </tr>
   <tr>
     <td align="center">5</td>
-    <td align="center">2.05</td>
-    <td align="center">1.97</td>
-    <td align="center">2.91</td>
+    <td align="center">63.59</td>
+    <td align="center">16.33</td>
+    <td align="center">0.83</td>
   </tr>
   <tr>
     <td align="center">6</td>
-    <td align="center">1.88</td>
-    <td align="center">2.14</td>
-    <td align="center">3.05</td>
+    <td align="center">62.41</td>
+    <td align="center">16.18</td>
+    <td align="center">0.86</td>
   </tr>
   <tr>
     <td align="center">7</td>
-    <td align="center">2.21</td>
-    <td align="center">1.91</td>
-    <td align="center">2.67</td>
+    <td align="center">65.44</td>
+    <td align="center">16.57</td>
+    <td align="center">0.87</td>
   </tr>
   <tr>
     <td align="center">8</td>
-    <td align="center">1.96</td>
-    <td align="center">2.18</td>
-    <td align="center">2.94</td>
+    <td align="center">88.21</td>
+    <td align="center">16.92</td>
+    <td align="center">0.86</td>
   </tr>
   <tr>
     <td align="center">9</td>
-    <td align="center">2.09</td>
-    <td align="center">1.85</td>
-    <td align="center">2.72</td>
+    <td align="center">78.54</td>
+    <td align="center">16.49</td>
+    <td align="center">0.86</td>
   </tr>
   <tr>
     <td align="center">10</td>
-    <td align="center">2.12</td>
-    <td align="center">2.05</td>
-    <td align="center">3.12</td>
+    <td align="center">80.60</td>
+    <td align="center">16.76</td>
+    <td align="center">0.85</td>
   </tr>
   <tr>
     <td align="center">Média</td>
-    <td align="center">2.05</td>
-    <td align="center">2.02</td>
-    <td align="center">2.93</td>
+    <td align="center">74.17</td>
+    <td align="center">16.75</td>
+    <td align="center">0.91</td>
   </tr>
   <tr>
     <td align="center">Desvio Padrão</td>
-    <td align="center">0.17</td>
-    <td align="center">0.16</td>
-    <td align="center">0.19</td>
+    <td align="center">8.88</td>
+    <td align="center">0.45</td>
+    <td align="center">0.14</td>
   </tr>
 </table>
 
