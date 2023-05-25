@@ -35,10 +35,17 @@ void Labirinto::aleatoria(int **m){
                 x = y = 0;
             }
             this->qtd++;
+            //printMatriz(str, m, x, y);
+            //system("clear");
+            //cout << "Labirinto Randômico:" << endl;
             printMatriz(str, m, x, y);
+            //system("read -p \"\nPressione enter para continuar...\" continue");
         }
     }
-    string name = "Aleatório";
+    system("clear");
+    cout << endl << VERMELHO "• LABIRINTO RANDÔMICO FINALIZADO" RESET << endl;
+    string name = "Randômico                                         ";
+    cout << "Acesse " VERMELHO "dataset/log_aleatoria.data" RESET " para visualizar " VERMELHO "informações detalhadas" RESET " sobre o percurso." << endl << endl;
     steady_clock::time_point t2 = steady_clock::now();
     tempo = duration_cast<duration<double>>(t2 - t1).count();
     relatorio(name.c_str(), tempo, qtd);
@@ -97,8 +104,9 @@ void Labirinto::BFS(int **m){
 
         if(m[x][y] == DESTINO){
             printMatriz(str, copia, x, y);
-            cout << "VICTORY" << endl;
-            string str = "BFS";
+            cout << VERDE "• LABIRINTO BFS FINALIZADO" RESET << endl;
+            string str = "Breadth-First Search (BFS) ou Busca em Largura    ";
+            cout << "Acesse " VERDE "dataset/log_BFS.data" RESET " para visualizar " VERDE "informações detalhadas" RESET " sobre o percurso." << endl;
             steady_clock::time_point t2 = steady_clock::now();
             tempo = duration_cast<duration<double>>(t2 - t1).count();
             relatorio(str.c_str(), tempo, qtd);
@@ -144,6 +152,7 @@ void Labirinto::BFS(int **m){
         }
 
         //system("clear");
+        //cout << "Labirinto BFS:" << endl;
         printMatriz(str, copia, x, y);
         //system("read -p \"\nPressione enter para continuar...\" continue");
 
@@ -259,8 +268,10 @@ void Labirinto::DFS(int **m){
 
         if(m[x][y] == DESTINO){
             printMatriz(str, copia, x, y);
-            cout << "VICTORY" << endl;
-            string str = "DFS";
+            cout << endl << AZUL "• LABIRINTO DFS FINALIZADO" RESET << endl;
+            string str = "Depth-First Search (DFS) ou Busca em Profundidade ";
+            cout << "Acesse " AZUL "dataset/log_DFS.data" RESET " para visualizar " AZUL "informações detalhadas" RESET " sobre o percurso.";
+            cout << endl << endl << endl << "‣ Acesse " AMARELO "dataset/output.data" RESET " para visualizar um " AMARELO "comparativo" RESET " entre os tipos de labirinto." << endl << endl;
             steady_clock::time_point t2 = steady_clock::now();
             tempo = duration_cast<duration<double>>(t2 - t1).count();
             relatorio(str.c_str(), tempo, qtd);
@@ -272,6 +283,7 @@ void Labirinto::DFS(int **m){
         searchCaminho(m, copia, x, y);
 
         //system("clear");
+        //cout << "Labirinto DFS:" << endl;
         printMatriz(str, copia, x, y);
         //system("read -p \"\nPressione enter para continuar...\" continue");
 
@@ -298,10 +310,10 @@ void Labirinto::logs(char *str, int **copia, int x, int y, int linha, int coluna
     if(file == NULL){
         printf(VERMELHO "Não foi possível abrir o arquivo\n" RESET);
     } else{
-        fprintf(file, "==========================\n");
+        fprintf(file, "|============ log ============|\n");
         //fprintf(file, "Matriz atual: %d\n", m->numMatriz);
-        fprintf(file, "M[%d][%d]\n", linha, coluna);
-        fprintf(file, "Posição: [x = %d]; [y = %d]\n\n", x, y);
+        fprintf(file, " Matriz[%d][%d]\n", linha, coluna);
+        fprintf(file, " Posição: [x = %d]; [y = %d]\n\n", x, y);
 
         for(int i = 0; i < linha; i++){
             for(int j = 0; j < coluna; j++){
@@ -326,6 +338,7 @@ void Labirinto::logs(char *str, int **copia, int x, int y, int linha, int coluna
         }
         fprintf(file, "\n");
     }
+    fprintf(file, "|=============================|\n\n\n\n");
     fclose(file);
     //free(str);
 }
@@ -338,11 +351,27 @@ void Labirinto::relatorio(const char *labirintos, double tempo, int qtd_passos){
 
     if(file == NULL){
         printf(VERMELHO "Não foi possível abrir o arquivo\n" RESET);
-    } else{
-        fprintf(file, "==========================\n");
-        fprintf(file, "\nTipo de Labirinto: %s\n", labirintos);
+    } /*else{
+        fprintf(file, "\n\n========================================\n");
+        fprintf(file, "Tipo de Labirinto: %s\n", labirintos);
         fprintf(file, "Tempo de execução: %lf segundos\n", tempo);
         fprintf(file, "Quantidade de passos: %d\n", qtd_passos);
+        fprintf(file, "========================================\n\n");
+    }*/
+    else{
+        fprintf(file, "|=====================> INFORMAÇÕES SOBRE O PERCURSO <=============================|\n");
+        fprintf(file, "|                                                                                  |\n");
+        fprintf(file, "|Jogo foi finalizado e abaixo estão as informações detalhadas da jornada.          |\n");
+        fprintf(file, "|                                                                                  |\n");
+        fprintf(file, "|Tipo de Labirinto: %s             |\n", labirintos);
+        fprintf(file, "|                                                                                  |\n");
+        fprintf(file, "|                                                                                  |\n");
+        fprintf(file, "| => Tempo de execução em segundos:                 [%lf ]                    |\n", tempo);   //(a) quantas casas foram percorridas ao todo;
+        fprintf(file, "|                                                                                  |\n");
+        fprintf(file, "| => Quantidade de casas diferentes visitadas:      [%5d    ]                    |\n", qtd_passos);   //(a) quantas casas foram percorridas ao todo; 
+        fprintf(file, "|                                                                                  |\n");
+        fprintf(file, "|                                                                                  |\n");
+        fprintf(file, "|==================================================================================|\n\n");
     }
     fclose(file);
     //free(str);

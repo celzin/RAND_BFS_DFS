@@ -1,15 +1,42 @@
-==========================
+|=====================> INFORMAÇÕES SOBRE O PERCURSO <=============================|
+|                                                                                  |
+|Jogo foi finalizado e abaixo estão as informações detalhadas da jornada.          |
+|                                                                                  |
+|Tipo de Labirinto: Randômico                                                      |
+|                                                                                  |
+|                                                                                  |
+| => Tempo de execução em segundos:                 [0.001881 ]                    |
+|                                                                                  |
+| => Quantidade de casas diferentes visitadas:      [   61    ]                    |
+|                                                                                  |
+|                                                                                  |
+|==================================================================================|
 
-Tipo de Labirinto: Aleatório
-Tempo de execução: 0.005666 segundos
-Quantidade de passos: 592
-==========================
+|=====================> INFORMAÇÕES SOBRE O PERCURSO <=============================|
+|                                                                                  |
+|Jogo foi finalizado e abaixo estão as informações detalhadas da jornada.          |
+|                                                                                  |
+|Tipo de Labirinto: Breadth-First Search (BFS) ou Busca em Largura                 |
+|                                                                                  |
+|                                                                                  |
+| => Tempo de execução em segundos:                 [0.000271 ]                    |
+|                                                                                  |
+| => Quantidade de casas diferentes visitadas:      [   25    ]                    |
+|                                                                                  |
+|                                                                                  |
+|==================================================================================|
 
-Tipo de Labirinto: BFS
-Tempo de execução: 0.000517 segundos
-Quantidade de passos: 28
-==========================
+|=====================> INFORMAÇÕES SOBRE O PERCURSO <=============================|
+|                                                                                  |
+|Jogo foi finalizado e abaixo estão as informações detalhadas da jornada.          |
+|                                                                                  |
+|Tipo de Labirinto: Depth-First Search (DFS) ou Busca em Profundidade              |
+|                                                                                  |
+|                                                                                  |
+| => Tempo de execução em segundos:                 [0.000096 ]                    |
+|                                                                                  |
+| => Quantidade de casas diferentes visitadas:      [    9    ]                    |
+|                                                                                  |
+|                                                                                  |
+|==================================================================================|
 
-Tipo de Labirinto: DFS
-Tempo de execução: 0.000267 segundos
-Quantidade de passos: 24
