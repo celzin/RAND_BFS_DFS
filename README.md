@@ -121,6 +121,35 @@ Primeiramente, para o correto funcionamento do programa é necessário incluir u
 <em>Imagem 4: Exemplo de entrada no formato desejado.</em>
 </p>
 
+## Pequenos exemplos 
+
+### Randômico
+
+![random_black](https://github.com/celzin/BFS_and_DFS/assets/84406892/dd8a9630-89cd-441e-9a8b-e9504d0791c2) 
+
+<p align="center">
+<em>Gif 1: Exemplo do labirinto randômico com a entrada da imagem 4.</em>
+</p>
+
+### **Breadth-First Search (BFS)** ou **Busca em Largura** 
+
+![bfs_black](https://github.com/celzin/BFS_and_DFS/assets/84406892/a17e6758-052b-48f0-b8c4-62362e5156fa)
+
+<p align="center">
+<em>Gif 2: Exemplo do labirinto BFS com a entrada da imagem 4.</em>
+</p>
+
+
+### **Depth-First Search (DFS)** ou **Busca em Profundidade**
+
+![dfs_black](https://github.com/celzin/BFS_and_DFS/assets/84406892/70cd5f1d-fb6e-4950-a735-c406c414f1cc) 
+
+<p align="center">
+<em>Gif 3: Exemplo do labirinto DFS com a entrada da imagem 4.</em>
+</p>
+
+
+
 <p align="justify">
 Por fim, esse programa possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 </p>
