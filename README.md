@@ -128,6 +128,25 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 <em>Gif 3: Exemplo do labirinto **DFS** executando.</em>
 </p>
 
+# Experimentação
+
+<div align="justify">
+	
+Nesta seção, apresentamos os resultados de experimentos envolvendo três tipos de algoritmos de busca: **Randômico**, **BFS** e **DFS**. O objetivo dos experimentos é comparar o desempenho e a eficácia desses algoritmos em um mesmo tipo de entrada, utilizando uma máquina com especificações definidas.
+
+Os experimentos foram conduzidos em uma máquina com as seguintes especificações:
+
+- Processador: Ryzen 5 5500;
+- Memória RAM: 8 GB DDR4;
+- Sistema Operacional: Ubuntu Linux;
+- Linguagem de Programação: C++.
+
+Para cada algoritmo (**Randômico**, **BFS** e **DFS**), foram executadas 10 iterações utilizando a mesma entrada. A entrada consiste em um labirinto representado por uma matriz 50x50, no qual estão presentes os 4 tios elementos apresentados anteriormente('1' '*' '#' '?'). Essa entrada foi mantida constante em todos os experimentos para garantir a comparabilidade dos resultados.
+
+Durante cada iteração, o tempo de execução do algoritmo, o caminho percorrido e a solução encontrada (caso tenha sido encontrada) foram registrados. Os resultados obtidos nos experimentos foram analisados com base na eficiência dos algoritmos em encontrar uma solução ótima, bem como no tempo de execução necessário para cada um deles.
+
+</div>
+
 # Conclusão
 
 <div align="justify">
