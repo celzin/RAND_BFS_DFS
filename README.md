@@ -226,8 +226,12 @@ Para cada algoritmo (**Randômico**, **BFS** e **DFS**), foram executadas 10 ite
   </tr>
 </table>
 
+<div align="justify">
+	
 Em resumo, com base nos dados fornecidos, podemos dizer que o algoritmo DFS apresentou o menor tempo médio de execução (0,91), seguido pelo algoritmo BFS (16,75) e, por fim, o algoritmo Random (74,17). Além disso, o algoritmo DFS apresentou a menor variabilidade nos tempos de execução, indicada pelo menor desvio padrão (0,14), enquanto o algoritmo Random apresentou a maior variabilidade, com um desvio padrão mais alto (8,88). Isso sugere que o algoritmo DFS pode ser mais consistente e previsível em termos de tempo de execução em comparação com os outros dois algoritmos no cenário da entrada fornecida.
 
+</div>
+	
 # Conclusão
 
 <div align="justify">
