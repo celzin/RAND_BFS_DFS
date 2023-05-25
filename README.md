@@ -128,7 +128,9 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 
 # Conclusão
 <div alig="justify">
+
 Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos analisar e comparar três modelos de busca: **Randômico**, **BFS** e **DFS**. Á frente exploramos as características de cada modelo em diferentes cenários, desde o melhor caso em que encontram soluções rapidamente, até o pior caso em que podem demorar ou até mesmo falhar em encontrar uma solução ótima. Além disso, abordaremos o caso médio, em que cada modelo se comporta de forma distintiva, a fim de compreender as características particulares para cada modelo.
+
 </div>
 
 ### Melhor caso:
