@@ -141,7 +141,7 @@ Os experimentos foram conduzidos em uma máquina com as seguintes especificaçõ
 - Sistema Operacional: Ubuntu Linux;
 - Linguagem de Programação: C++.
 
-Para cada algoritmo (**Randômico**, **BFS** e **DFS**), foram executadas 10 iterações utilizando a mesma entrada. A entrada consiste em um labirinto representado por uma matriz 50x50, no qual estão presentes os 4 tios elementos apresentados anteriormente('1' '*' '#' '?'). Essa entrada foi mantida constante em todos os experimentos para garantir a comparabilidade dos resultados.
+Para cada algoritmo (**Randômico**, **BFS** e **DFS**), foram executadas 10 iterações utilizando a mesma entrada. A entrada consiste em um labirinto representado por uma matriz 50x50, no qual estão presentes os 4 tipos elementos apresentados anteriormente('1', '*', '#', '?'). Essa entrada foi mantida constante em todos os experimentos para garantir a comparabilidade dos resultados.
 
 Durante cada iteração, o tempo de execução do algoritmo, o caminho percorrido e a solução encontrada (caso tenha sido encontrada) foram registrados. Os resultados obtidos nos experimentos foram analisados com base na eficiência dos algoritmos em encontrar uma solução ótima, bem como no tempo de execução necessário para cada um deles.
 
