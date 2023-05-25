@@ -109,7 +109,7 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 
 ### Exemplo **Breadth-First Search (BFS)** ou **Busca em Largura** 
 
-![bfs_black](https://github.com/celzin/BFS_and_DFS/assets/84406892/a17e6758-052b-48f0-b8c4-62362e5156fa)
+![bfs_black](https://github.com/celzin/RAND_BFS_DFS/assets/84406892/a17e6758-052b-48f0-b8c4-62362e5156fa)
 
 <p align="center">
 <em>Gif 2: Exemplo do labirinto BFS.</em>
@@ -120,7 +120,7 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 
 ### Exemplo **Depth-First Search (DFS)** ou **Busca em Profundidade**
 
-![dfs_black](https://github.com/celzin/BFS_and_DFS/assets/84406892/70cd5f1d-fb6e-4950-a735-c406c414f1cc) 
+![dfs_black](https://github.com/celzin/RAND_BFS_DFS/assets/84406892/70cd5f1d-fb6e-4950-a735-c406c414f1cc) 
 
 <p align="center">
 <em>Gif 3: Exemplo do labirinto DFS.</em>
