@@ -103,7 +103,7 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 # Compilação e Execução 
 
 <p align="justify">
-Primeiramente, para o correto funcionamento do programa é necessário incluir um arquivo nomeado preferencialmente de <code>input.data</code> dentro da pasta <code>dataset</code>, devendo seguir o seguinte formato:
+Primeiramente, para o correto funcionamento do programa é necessário incluir um arquivo nomeado de <code>input.data</code> dentro da pasta <code>dataset</code>, devendo seguir o seguinte formato:
 	
 - Em sua primeira linha: os valores NxN que serão assumidos pelas matrizes geradas
 - Logo em seguida, dispõe-se a matriz com os elementos espaçados, na seguinte ideia:
