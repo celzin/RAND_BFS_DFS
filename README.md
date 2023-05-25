@@ -95,41 +95,37 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 </div>
 
 
-### Exemplo Randômico
-
 <p align="center">
 <img src="imgs/random_black.gif" width=""/> 
 </p>
 
 <p align="center">
-<em>Gif 1: Exemplo do labirinto randômico.</em>
+<em>Gif 1: Exemplo do labirinto **randômico** executando.</em>
 </p>
 
 ## BFS
 - Alterar aqui
 
 
-### Exemplo **Breadth-First Search (BFS)** ou **Busca em Largura** 
 
 <p align="center">
 <img src="imgs/bfs_black.gif" width=""/> 
 </p>
 
 <p align="center">
-<em>Gif 2: Exemplo do labirinto BFS.</em>
+<em>Gif 2: Exemplo do labirinto **BFS** executando.</em>
 </p>
 
 ## DFS
 - Alterar aqui
 
-### Exemplo **Depth-First Search (DFS)** ou **Busca em Profundidade**
 
 <p align="center">
 <img src="imgs/dfs_black.gif" width=""/> 
 </p>
 
 <p align="center">
-<em>Gif 3: Exemplo do labirinto DFS.</em>
+<em>Gif 3: Exemplo do labirinto **DFS** executando.</em>
 </p>
 
 # Conclusão
