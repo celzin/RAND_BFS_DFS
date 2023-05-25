@@ -141,13 +141,9 @@ Os experimentos foram conduzidos em uma máquina com as seguintes especificaçõ
 - Sistema Operacional: Ubuntu Linux;
 - Linguagem de Programação: C++.
 
-Para cada algoritmo (**Randômico**, **BFS** e **DFS**), foram executadas 10 iterações utilizando a mesma entrada. A entrada consiste em um labirinto representado por uma matriz 50x50, no qual estão presentes os 4 tipos elementos apresentados anteriormente('1', '*', '#', '?'). Essa entrada foi mantida constante em todos os experimentos para garantir a comparabilidade dos resultados.
-
-Durante cada iteração, o tempo de execução do algoritmo, o caminho percorrido e a solução encontrada (caso tenha sido encontrada) foram registrados. Os resultados obtidos nos experimentos foram analisados com base na eficiência dos algoritmos em encontrar uma solução ótima, bem como no tempo de execução necessário para cada um deles.
+Para cada algoritmo (**Randômico**, **BFS** e **DFS**), foram executadas 10 iterações utilizando a mesma entrada. A entrada consiste em um labirinto representado por uma matriz 50x50, no qual estão presentes os 4 tipos elementos apresentados anteriormente('1', '*', '#', '?'). Essa entrada foi mantida constante em todos os experimentos para garantir a comparabilidade dos resultados. Durante cada iteração, o tempo de execução do algoritmo, o caminho percorrido e a solução encontrada (caso tenha sido encontrada) foram registrados. Os resultados obtidos nos experimentos foram analisados com auxílio da tabela abaixo.
 
 </div>
-
-
 
 <table align="center">
   <tr>
@@ -229,6 +225,8 @@ Durante cada iteração, o tempo de execução do algoritmo, o caminho percorrid
     <td align="center">0.14</td>
   </tr>
 </table>
+
+Em resumo, com base nos dados fornecidos, podemos dizer que o algoritmo DFS apresentou o menor tempo médio de execução (0,91), seguido pelo algoritmo BFS (16,75) e, por fim, o algoritmo Random (74,17). Além disso, o algoritmo DFS apresentou a menor variabilidade nos tempos de execução, indicada pelo menor desvio padrão (0,14), enquanto o algoritmo Random apresentou a maior variabilidade, com um desvio padrão mais alto (8,88). Isso sugere que o algoritmo DFS pode ser mais consistente e previsível em termos de tempo de execução em comparação com os outros dois algoritmos no cenário da entrada fornecida.
 
 # Conclusão
 
