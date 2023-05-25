@@ -159,7 +159,7 @@ Durante cada iteração, o tempo de execução do algoritmo, o caminho percorrid
   <tr>
     <td align="center">1</td>
     <td align="center">66.92</td>
-    <td align="center">79.45.</td>
+    <td align="center">79.45</td>
     <td align="center">0.94</td>
   </tr>
   <tr>
