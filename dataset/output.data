@@ -5,9 +5,9 @@
 |Tipo de Labirinto: Randômico                                                      |
 |                                                                                  |
 |                                                                                  |
-| => Tempo de execução em segundos:                 [0.001881 ]                    |
+| => Tempo de execução em segundos:                 [0.014277 ]                    |
 |                                                                                  |
-| => Quantidade de casas diferentes visitadas:      [   61    ]                    |
+| => Quantidade de casas diferentes visitadas:      [  608    ]                    |
 |                                                                                  |
 |                                                                                  |
 |==================================================================================|
@@ -19,9 +19,9 @@
 |Tipo de Labirinto: Breadth-First Search (BFS) ou Busca em Largura                 |
 |                                                                                  |
 |                                                                                  |
-| => Tempo de execução em segundos:                 [0.000271 ]                    |
+| => Tempo de execução em segundos:                 [0.003073 ]                    |
 |                                                                                  |
-| => Quantidade de casas diferentes visitadas:      [   25    ]                    |
+| => Quantidade de casas diferentes visitadas:      [  113    ]                    |
 |                                                                                  |
 |                                                                                  |
 |==================================================================================|
@@ -33,9 +33,9 @@
 |Tipo de Labirinto: Depth-First Search (DFS) ou Busca em Profundidade              |
 |                                                                                  |
 |                                                                                  |
-| => Tempo de execução em segundos:                 [0.000096 ]                    |
+| => Tempo de execução em segundos:                 [0.000819 ]                    |
 |                                                                                  |
-| => Quantidade de casas diferentes visitadas:      [    9    ]                    |
+| => Quantidade de casas diferentes visitadas:      [   41    ]                    |
 |                                                                                  |
 |                                                                                  |
 |==================================================================================|
