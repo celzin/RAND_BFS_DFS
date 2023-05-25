@@ -127,14 +127,15 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 </p>
 
 # Conclusão
-<div alig="justify">
+
+<div align="justify">
 
 Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos analisar e comparar três modelos de busca: **Randômico**, **BFS** e **DFS**. Á frente exploramos as características de cada modelo em diferentes cenários, desde o melhor caso em que encontram soluções rapidamente, até o pior caso em que podem demorar ou até mesmo falhar em encontrar uma solução ótima. Além disso, abordaremos o caso médio, em que cada modelo se comporta de forma distintiva, a fim de compreender as características particulares para cada modelo.
 
 </div>
 
 ### Melhor caso:
-<div align ="justify">
+<div align="justify">
 
 - **Randômico:** No melhor caso, o modelo Randômico pode encontrar o ponto de parada rapidamente se tiver sorte com suas escolhas aleatórias. No entanto, a probabilidade de encontrar uma solução ótima é baixa, pois não segue uma estratégia específica.
 - **BFS:** É um algoritmo completo que procura a solução mais curta em termos de número de movimentos. No melhor caso, se o ponto de parada estiver próximo à posição inicial, o BFS encontrará uma solução ótima em um curto espaço de tempo.
@@ -144,7 +145,7 @@ Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos
 
 ### Pior caso:
 
-<div align ="justify">
+<div align="justify">
 
 - **Randômico:** No pior caso, o modelo Randômico pode ficar preso em um loop infinito ou levar um tempo muito longo para encontrar o ponto de parada, já que suas escolhas são aleatórias e não segue uma estratégia determinística.
 - **BFS:** No pior caso, se o ponto de parada estiver localizado em uma área distante da posição inicial e houver muitas paredes no caminho, o BFS pode levar muito tempo para encontrar uma solução, pois explora todos os caminhos possíveis em largura.
@@ -154,7 +155,7 @@ Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos
 
 ### Caso médio:
 
-<div align ="justify">
+<div align="justify">
 
 - **Randômico:** No caso médio, o modelo Randômico pode encontrar o ponto de parada em um tempo razoável, dependendo da distribuição dos elementos na matriz e da localização do ponto de parada. No entanto, a solução encontrada pode não ser ótima.
 - **BFS:** No caso médio, o BFS tem uma boa chance de encontrar uma solução ótima ou próxima disso em um tempo razoável, explorando em largura e encontrando o caminho mais curto.
