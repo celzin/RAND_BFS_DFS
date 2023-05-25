@@ -14,10 +14,10 @@ Os modelos de caminhamento são: **Randômico** (já realizado e precisa ser ada
 	
 A matriz tem tamanho N x N e contém quatro tipos de elementos: 
 	
-- **Passagem livre ( 1 )**; 
-- **Item de dano ('*')**; 
-- **Paredes ('#')**;
-- **Ponto de parada ('?')** que é **colocado aleatoriamente** na matriz;
+- <code>('1')</code>: **Passagem livre**; 
+- <code>('*')</code>: **Item de dano**; 
+- <code>('#')</code>: **Paredes**;
+- <code>('?')</code>: **Ponto de parada** --> colocado **aleatoriamente** na matriz;
 
 </div>
 
@@ -175,10 +175,10 @@ Primeiramente, para o correto funcionamento do programa é necessário incluir u
 - Em sua primeira linha: os valores NxN que serão assumidos pelas matrizes geradas
 - Logo em seguida, dispõe-se a matriz com os elementos espaçados, na seguinte ideia:
 
-	- **Passagem livre ( 1 )**; 
-	- **Item de dano ('*')**; 
-	- **Paredes ('#')**;
-	- **Ponto de parada ('?')**.
+	- <code>('1')</code>: **Passagem livre**; 
+	- <code>('*')</code>: **Item de dano**; 
+	- <code>('#')</code>: **Paredes**;
+	- <code>('?')</code>: **Ponto de parada**.
 </p>
 
 <p align="center">
