@@ -128,6 +128,37 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 
 # Conclusão
 
+### Melhor caso:
+<div align ="justify">
+
+- **Randômico:** No melhor caso, o modelo Randômico pode encontrar o ponto de parada rapidamente se tiver sorte com suas escolhas aleatórias. No entanto, a probabilidade de encontrar uma solução ótima é baixa, pois não segue uma estratégia específica.
+- **BFS:** É um algoritmo completo que procura a solução mais curta em termos de número de movimentos. No melhor caso, se o ponto de parada estiver próximo à posição inicial, o BFS encontrará uma solução ótima em um curto espaço de tempo.
+- **DFS:** No melhor caso, se o ponto de parada estiver próximo à posição inicial e a busca seguir em uma direção favorável, o DFS pode encontrar uma solução rapidamente. No entanto, assim como o Randômico, não garante uma solução ótima.
+
+</div>
+
+### Pior caso:
+
+<div align ="justify">
+
+- **Randômico:** No pior caso, o modelo Randômico pode ficar preso em um loop infinito ou levar um tempo muito longo para encontrar o ponto de parada, já que suas escolhas são aleatórias e não segue uma estratégia determinística.
+- **BFS:** No pior caso, se o ponto de parada estiver localizado em uma área distante da posição inicial e houver muitas paredes no caminho, o BFS pode levar muito tempo para encontrar uma solução, pois explora todos os caminhos possíveis em largura.
+- **DFS:** No pior caso, se o ponto de parada estiver localizado em uma área distante da posição inicial e a busca seguir em direções que levam a caminhos sem saída, o DFS pode se perder em profundidade e demorar para encontrar uma solução.
+
+</div>
+
+### Caso médio:
+
+<div align ="justify">
+
+- **Randômico:** No caso médio, o modelo Randômico pode encontrar o ponto de parada em um tempo razoável, dependendo da distribuição dos elementos na matriz e da localização do ponto de parada. No entanto, a solução encontrada pode não ser ótima.
+- **BFS:** No caso médio, o BFS tem uma boa chance de encontrar uma solução ótima ou próxima disso em um tempo razoável, explorando em largura e encontrando o caminho mais curto.
+- **DFS:** No caso médio, o DFS pode encontrar o ponto de parada em um tempo razoável, mas a solução encontrada pode não ser a mais curta. O DFS é mais propenso a seguir caminhos mais profundos antes de retornar e explorar outras alternativas.
+
+Em resumo, o modelo **Randômico** depende muito da sorte e não oferece garantias de encontrar uma solução ótima. O **BFS** é mais eficiente em encontrar soluções ótimas, enquanto o **DFS** pode ser mais rápido em alguns casos, mas não garante uma solução ótima.
+
+</div>
+
 # Compilação e Execução 
 
 <p align="justify">
