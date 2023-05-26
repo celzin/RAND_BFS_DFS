@@ -42,21 +42,54 @@ O objetivo final é avaliar a implementação e o desempenho dos modelos de cami
 
 </div>
 
-# O que é BFS
+# O que é BFS?
 <div align="justify">
 	
 **Breadth-First Search (BFS)** ou **Busca em Largura**, é um algoritmo de busca em grafo que começa a explorar a partir do vértice raiz e visita todos os seus vizinhos primeiro, antes de se mover para o próximo nível de vizinhos. Em outras palavras, ele explora todos os vértices a uma distância "d" antes de explorar qualquer vértice a uma distância "d+1".
 	
 É um método para percorrer todos os vértices de um grafo, visitando todos os vértices a uma determinada distância antes de passar para o próximo nível de distância. Ele começa a partir de um vértice inicial (também chamado de raiz) e explora todos os vértices que estão a uma distância de um passo da raiz antes de passar para os vértices que estão a uma distância de dois passos da raiz, e assim por diante.
 	
-</div>
-
 <p align="center">
 <img src="imgs/bfs.png" width="350"/> 
 </p>
 <p align="center">
 <em>Imagem 2: Busca em Largura.</em>
 </p>
+	
+```Funcionamento```
+
+O BFS explora os vértices de um grafo em camadas, começando pelo vértice inicial e expandindo para os vizinhos antes de explorar vértices mais distantes. Com isso, o algoritmo utiliza uma estrutura de dados chamada fila para manter os vértices a serem explorados, apresentando o seguinte passo a passo do seu funcionamento:
+
+1º) Inicialização:
+
+- Escolha um vértice inicial para começar a busca.
+- Crie uma fila vazia e marque o vértice inicial como visitado.
+- Insira o vértice inicial na fila.
+
+2º) Iteração:
+
+- Enquanto a fila não estiver vazia, repita os seguintes passos:
+	- Remova o vértice da frente da fila.
+	- Explore todos os vértices vizinhos não visitados do vértice removido.
+		- Marque cada vértice vizinho como visitado.
+		- Insira cada vértice vizinho na fila.
+		- Realize as ações desejadas para cada vértice (por exemplo, armazenar o caminho percorrido, calcular distâncias, etc.).
+
+3º) Condição de Parada:
+
+- O BFS termina quando a fila estiver vazia, ou seja, todos os vértices alcançáveis foram visitados.
+	
+<p align="center">
+<img src="imgs/bfs_black.gif" width="650"/> 
+</p>
+
+<p align="center">
+<em>Gif 2: Exemplo do labirinto **BFS** executando.</em>
+</p>
+
+	
+</div>
+
 
 # O que é DFS?
 <div align="justify">
@@ -103,18 +136,6 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 <em>Gif 1: Exemplo do labirinto **randômico** executando.</em>
 </p>
 
-## BFS
-- Alterar aqui
-
-
-
-<p align="center">
-<img src="imgs/bfs_black.gif" width=""/> 
-</p>
-
-<p align="center">
-<em>Gif 2: Exemplo do labirinto **BFS** executando.</em>
-</p>
 
 ## DFS
 - Alterar aqui
