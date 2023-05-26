@@ -98,34 +98,17 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 
 ## BFS
 
-```Solução do Problema```
-
-O BFS explora os vértices de um grafo em camadas, começando pelo vértice inicial e expandindo para os vizinhos antes de explorar vértices mais distantes. Ou seja, a medida que o algoritmo avança, ele explora todas as células vizinhas de uma célula antes de avançar para as células mais distantes. Dessa forma, o BFS garante que encontraremos o caminho mais curto entre a célula inicial e qualquer outra célula no labirinto.
-
-Durante a execução do BFS, podemos armazenar informações adicionais, como o caminho percorrido, para posterior análise ou uso. Isso pode ser feito mantendo uma estrutura de dados adicional, como um vetor de predecessores, que registra de qual célula cada célula foi alcançada.
-
-Ao final do algoritmo, podemos determinar se a célula de saída do labirinto foi alcançada ou não. Além disso, se armazenamos o caminho percorrido, podemos recuperar o caminho mais curto entre a célula. 
+<div align="justify">
 	
-Abaixo está um exemplo de como resolver o problema do BFS:
+O método BFS recebe uma matriz m como entrada, que representa o labirinto a ser resolvido. A função inicia abrindo um arquivo de log vazio para registrar informações detalhadas sobre o percurso realizado. Em seguida, a função cria uma <code>matriz copia</code> como uma cópia do labirinto original 'm'. Essa cópia será usada para marcar os caminhos visitados e explorados durante a busca em largura. A função inicializa as variáveis 'x' e 'y' com 0, representando as coordenadas atuais no labirinto. A variável qtd é inicializada como 0 e será usada para contar o número de passos necessários para encontrar o destino.
 
-1º) Inicialização:
+Ademais, uma fila <code>(queue)</code> é criada para armazenar as coordenadas a serem exploradas. A função começa adicionando as coordenadas iniciais <code>(cord_1, cord_2)</code> à fila usando <code>fila.push(make_pair(cord_1, cord_2))</code>. Nesse contexto, o loop principal é executado enquanto a fila não estiver vazia. Dentro do loop, a função verifica se a coordenada atual <code>(x, y)</code> é o destino. Se for o caso, o labirinto é considerado resolvido. Caso contrário, a função marca a coordenada atual como visitada, atualiza a matriz copia para refletir esse estado e verifica as coordenadas vizinhas para adicionar à fila.
 
-- Escolha um vértice inicial para começar a busca.
-- Crie uma fila vazia e marque o vértice inicial como visitado.
-- Insira o vértice inicial na fila.
+As coordenadas vizinhas são verificadas uma por uma. Se uma coordenada vizinha não for uma parede <code>(m[x + 1][y] != PAREDE)</code>, e não tiver sido visitada ou descoberta anteriormente <code>(copia[x + 1][y] != VISITADO && copia[x + 1][y] != DESCOBERTO)</code>, ela é adicionada à fila e marcada como descoberta <code>(copia[x + 1][y] = DESCOBERTO)</code>. O mesmo procedimento é repetido para as coordenadas vizinhas nas direções acima, abaixo e à esquerda. Após explorar todas as coordenadas vizinhas da atual, o labirinto é impresso chamando a função <code>printMatriz</code> e o processo se repete até que o destino seja encontrado ou até que todas as coordenadas possíveis sejam exploradas. Se uma coordenada contiver um inimigo <code>(m[x][y] == INIMIGO)</code>, o labirinto e a fila são reinicializados para explorar novamente a partir das coordenadas iniciais.
 
-2º) Iteração:
-
-- Enquanto a fila não estiver vazia, repita os seguintes passos:
-	- Remova o vértice da frente da fila.
-	- Explore todos os vértices vizinhos não visitados do vértice removido.
-		- Marque cada vértice vizinho como visitado.
-		- Insira cada vértice vizinho na fila.
-		- Realize as ações desejadas para cada vértice (por exemplo, armazenar o caminho percorrido, calcular distâncias, etc.).
-
-3º) Condição de Parada:
-
-- O BFS termina quando a fila estiver vazia, ou seja, todos os vértices alcançáveis foram visitados.
+Ao final do algoritmo, o tempo de execução é calculado usando a biblioteca [**chrono**](https://learn.microsoft.com/pt-br/cpp/standard-library/chrono?view=msvc-170) e registrado em um relatório chamando a função relatorio. O número de passos realizados (qtd) também é registrado. Desse modo, o código implementa uma busca em largura para resolver um labirinto, utiliza uma matriz de cópia para rastrear o progresso da busca e uma fila para explorar as coordenadas do labirinto. Assim, durante a busca, o labirinto é impresso e o tempo de execução e o número de passos são registrados.
+	
+</div>
 
 <p align="center">
 <img src="imgs/bfs_black.gif" width="650"/> 
