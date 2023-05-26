@@ -56,9 +56,15 @@ O objetivo final é avaliar a implementação e o desempenho dos modelos de cami
 <em>Imagem 2: Busca em Largura.</em>
 </p>
 	
-```Funcionamento```
+```Solução do Problema```
 
-O BFS explora os vértices de um grafo em camadas, começando pelo vértice inicial e expandindo para os vizinhos antes de explorar vértices mais distantes. Com isso, o algoritmo utiliza uma estrutura de dados chamada fila para manter os vértices a serem explorados, apresentando o seguinte passo a passo do seu funcionamento:
+O BFS explora os vértices de um grafo em camadas, começando pelo vértice inicial e expandindo para os vizinhos antes de explorar vértices mais distantes. Ou seja, a medida que o algoritmo avança, ele explora todas as células vizinhas de uma célula antes de avançar para as células mais distantes. Dessa forma, o BFS garante que encontraremos o caminho mais curto entre a célula inicial e qualquer outra célula no labirinto.
+
+Durante a execução do BFS, podemos armazenar informações adicionais, como o caminho percorrido, para posterior análise ou uso. Isso pode ser feito mantendo uma estrutura de dados adicional, como um vetor de predecessores, que registra de qual célula cada célula foi alcançada.
+
+Ao final do algoritmo, podemos determinar se a célula de saída do labirinto foi alcançada ou não. Além disso, se armazenamos o caminho percorrido, podemos recuperar o caminho mais curto entre a célula. 
+	
+Abaixo está um exemplo de como resolver o problema do BFS:
 
 1º) Inicialização:
 
@@ -78,13 +84,13 @@ O BFS explora os vértices de um grafo em camadas, começando pelo vértice inic
 3º) Condição de Parada:
 
 - O BFS termina quando a fila estiver vazia, ou seja, todos os vértices alcançáveis foram visitados.
-	
+
 <p align="center">
 <img src="imgs/bfs_black.gif" width="650"/> 
 </p>
 
 <p align="center">
-<em>Gif 2: Exemplo do labirinto **BFS** executando.</em>
+<em>Gif 1: Exemplo do labirinto **BFS** executando.</em>
 </p>
 
 	
@@ -109,7 +115,49 @@ Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** �
 <em>Imagem 3: Busca em Profundidade.</em>
 </p>
 
-# Solução do Problema
+```Solução do Problema```
+
+Durante a execução do DFS, o algoritmo segue um caminho até alcançar um vértice terminal, ou seja, um vértice que não possui vértices vizinhos não visitados. Quando isso ocorre, o algoritmo retorna ao vértice anterior e continua a explorar os vértices restantes.
+
+O DFS percorre o grafo em profundidade antes de retroceder, o que significa que ele explora um ramo inteiro até atingir um vértice terminal antes de explorar outros ramos. Além disso, durante a execução do algoritmo, podemos armazenar informações adicionais, como o caminho percorrido, para posterior análise ou uso. Isso pode ser feito mantendo uma estrutura de dados adicional, como um vetor de predecessores, que registra de qual vértice cada vértice foi alcançado.
+
+Ao final do algoritmo, podemos determinar se um determinado vértice foi alcançado ou não. Além disso, se armazenamos o caminho percorrido, podemos recuperar o caminho completo entre o vértice inicial e um vértice específico.
+
+Abaixo está um exemplo de como resolver o problema do DFS:
+
+1º) Inicialização:
+
+- Escolha um vértice inicial para começar a busca.
+- Crie uma pilha vazia para armazenar os vértices a serem explorados.
+- Marque o vértice inicial como visitado.
+- Insira o vértice inicial na pilha.
+
+2º) Iteração:
+
+- Enquanto a pilha não estiver vazia, repita os seguintes passos:
+	- Remova o vértice do topo da pilha.
+	- Explore todos os vértices vizinhos não visitados do vértice removido.
+		- Para cada vértice vizinho:
+			- Marque o vértice vizinho como visitado.
+			- Insira o vértice vizinho na pilha.
+		- Realize as ações desejadas para cada vértice, como armazenar o caminho percorrido ou calcular distâncias.
+
+3º) Condição de Parada:
+
+- O DFS termina quando a pilha estiver vazia, ou seja, todos os vértices alcançáveis foram visitados.
+
+
+<p align="center">
+<img src="imgs/dfs_black.gif" width="650"/> 
+</p>
+
+<p align="center">
+<em>Gif 2: Exemplo do labirinto **DFS** executando.</em>
+</p>
+
+
+<!--
+## Solução do Problema
 
 <div align="justify">
 
@@ -118,6 +166,7 @@ Em resumo, os três tipos de labirintos apresentam abordagens diferentes para a 
 Esses três tipos de labirintos oferecem experiências diferentes para o jogador. O labirinto **Randômico** proporciona uma sensação de descoberta e desafio, o labirinto **BFS** oferece uma busca otimizada pelo destino e o labirinto **DFS** cria um senso de exploração e pode levar a soluções não tão eficientes. Cada um desses labirintos tem suas próprias características e desafios, proporcionando diferentes experiências aos jogadores. Abaixo esses modelos serão melhor detalhados.
 
 </div>
+-->
 
 ## Randômico
 
@@ -127,26 +176,38 @@ O código implementado é basicamente o mesmo implementado no trabalho [Labirint
 	
 </div>
 
+```Solução do Problema```
+
+O termo "Random" não se refere a um algoritmo específico, mas sim a um conceito geral de seleção aleatória. A seleção aleatória é amplamente utilizada em algoritmos e estruturas de dados para diferentes finalidades, como embaralhar elementos, gerar números aleatórios, amostragem aleatória e muito mais. Portanto, não há uma solução específica para o problema "Random".
+
+Abaixo está um exemplo de como resolver o problema Randômico:
+
+1º) Inicialização:
+
+- Dado um conjunto de elementos a serem embaralhados, como uma lista.
+- Definir o índice inicial como o último elemento da lista.
+
+2º) Iteração:
+
+- Enquanto o índice for maior que zero, repetir os seguintes passos:
+- Gerar um número aleatório entre zero e o índice atual.
+- Trocar o elemento na posição do índice atual com o elemento na posição do número aleatório gerado.
+- Diminuir o valor do índice em um.
+
+3º) Condição de Parada:
+
+- O algoritmo termina quando o índice chega a zero, ou seja, todos os elementos foram embaralhados.
+
+Durante a execução do exemplo acima, cada elemento é trocado de posição com um elemento aleatório que está antes dele na lista. Essa troca aleatória garante que todos os elementos tenham a mesma chance de ocupar qualquer posição na lista, resultando em um embaralhamento justo e aleatório.
+
+Em resumo, a solução do problema "Random" pode variar dependendo do contexto e do objetivo desejado. O uso de algoritmos específicos para seleção aleatória ou geração de números aleatórios é comum para lidar com a aleatoriedade em algoritmos e estruturas de dados.
 
 <p align="center">
-<img src="imgs/random_black.gif" width=""/> 
+<img src="imgs/random_black.gif" width="650"/> 
 </p>
 
 <p align="center">
-<em>Gif 1: Exemplo do labirinto **randômico** executando.</em>
-</p>
-
-
-## DFS
-- Alterar aqui
-
-
-<p align="center">
-<img src="imgs/dfs_black.gif" width=""/> 
-</p>
-
-<p align="center">
-<em>Gif 3: Exemplo do labirinto **DFS** executando.</em>
+<em>Gif 3: Exemplo do labirinto **randômico** executando.</em>
 </p>
 
 # Experimentação
