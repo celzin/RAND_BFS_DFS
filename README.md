@@ -241,7 +241,7 @@ Para cada algoritmo (**Randômico**, **BFS** e **DFS**), foram executadas 10 ite
   <tr>
     <td align="center">1</td>
     <td align="center">66.92</td>
-    <td align="center">79.45</td>
+    <td align="center">17.45</td>
     <td align="center">0.94</td>
   </tr>
   <tr>
