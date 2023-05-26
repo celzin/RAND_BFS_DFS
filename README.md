@@ -87,7 +87,6 @@ Esses três tipos de labirintos oferecem experiências diferentes para o jogador
 
 </div>
 
-
 ## Randômico
 
 <div align="justify">
@@ -95,6 +94,14 @@ Esses três tipos de labirintos oferecem experiências diferentes para o jogador
 O código implementado é basicamente o mesmo implementado no trabalho [Labirinto-Recorrente](https://github.com/phpdias/labirinto-recorrente), um algoritmo para gerar e resolver um labirinto aleatório, com algumas adaptações. A função <code>aleatoria</code> gera um labirinto aleatório e a função <code>checkMovimento</code> verifica se um determinado movimento é válido. A lógica principal está em um loop que continua até o jogador alcançar o destino no labirinto. Durante o loop, são feitos movimentos aleatórios e as posições são atualizadas de acordo. Se o jogador encontra um inimigo, o inimigo é removido e o jogador retorna à posição inicial. A quantidade de movimentos é registrada e, ao final, é exibida uma mensagem indicando se o jogador alcançou o destino ou não.
 	
 </div>
+
+<br>
+<p align="center">
+<img src="imgs/random_black.gif" width="650"/> 
+</p>
+<p align="center">
+<em>Gif 1: Exemplo do labirinto randômico executando.</em>
+</p>
 
 ## BFS
 
@@ -110,17 +117,15 @@ Ao final do algoritmo, o tempo de execução é calculado usando a biblioteca [*
 	
 </div>
 
+<br>
 <p align="center">
 <img src="imgs/bfs_black.gif" width="650"/> 
 </p>
-
 <p align="center">
-<em>Gif 1: Exemplo do labirinto BFS executando.</em>
+<em>Gif 2: Exemplo do labirinto BFS executando.</em>
 </p>
 
 ## DFS
-
-```Solução do Problema```
 
 Durante a execução do DFS, o algoritmo segue um caminho até alcançar um vértice terminal, ou seja, um vértice que não possui vértices vizinhos não visitados. Quando isso ocorre, o algoritmo retorna ao vértice anterior e continua a explorar os vértices restantes.
 
@@ -151,51 +156,13 @@ Abaixo está um exemplo de como resolver o problema do DFS:
 
 - O DFS termina quando a pilha estiver vazia, ou seja, todos os vértices alcançáveis foram visitados.
 
-
+<br>
 <p align="center">
 <img src="imgs/dfs_black.gif" width="650"/> 
 </p>
-
 <p align="center">
-<em>Gif 2: Exemplo do labirinto DFS executando.</em>
+<em>Gif 3: Exemplo do labirinto DFS executando.</em>
 </p>
-
-## Random
-
-```Solução do Problema```
-
-O termo "Random" não se refere a um algoritmo específico, mas sim a um conceito geral de seleção aleatória. A seleção aleatória é amplamente utilizada em algoritmos e estruturas de dados para diferentes finalidades, como embaralhar elementos, gerar números aleatórios, amostragem aleatória e muito mais. Portanto, não há uma solução específica para o problema "Random".
-
-Abaixo está um exemplo de como resolver o problema Randômico:
-
-1º) Inicialização:
-
-- Dado um conjunto de elementos a serem embaralhados, como uma lista.
-- Definir o índice inicial como o último elemento da lista.
-
-2º) Iteração:
-
-- Enquanto o índice for maior que zero, repetir os seguintes passos:
-- Gerar um número aleatório entre zero e o índice atual.
-- Trocar o elemento na posição do índice atual com o elemento na posição do número aleatório gerado.
-- Diminuir o valor do índice em um.
-
-3º) Condição de Parada:
-
-- O algoritmo termina quando o índice chega a zero, ou seja, todos os elementos foram embaralhados.
-
-Durante a execução do exemplo acima, cada elemento é trocado de posição com um elemento aleatório que está antes dele na lista. Essa troca aleatória garante que todos os elementos tenham a mesma chance de ocupar qualquer posição na lista, resultando em um embaralhamento justo e aleatório.
-
-Em resumo, a solução do problema "Random" pode variar dependendo do contexto e do objetivo desejado. O uso de algoritmos específicos para seleção aleatória ou geração de números aleatórios é comum para lidar com a aleatoriedade em algoritmos e estruturas de dados.
-
-<p align="center">
-<img src="imgs/random_black.gif" width="650"/> 
-</p>
-
-<p align="center">
-<em>Gif 3: Exemplo do labirinto randômico executando.</em>
-</p>
-
 
 # Experimentação
 
@@ -312,9 +279,9 @@ Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos
 ### Melhor caso:
 <div align="justify">
 
-- **Randômico:** No melhor caso, o modelo Randômico pode encontrar o ponto de parada rapidamente se tiver sorte com suas escolhas aleatórias. No entanto, a probabilidade de encontrar uma solução ótima é baixa, pois não segue uma estratégia específica.
-- **BFS:** É um algoritmo completo que procura a solução mais curta em termos de número de movimentos. No melhor caso, se o ponto de parada estiver próximo à posição inicial, o BFS encontrará uma solução ótima em um curto espaço de tempo.
-- **DFS:** No melhor caso, se o ponto de parada estiver próximo à posição inicial e a busca seguir em uma direção favorável, o DFS pode encontrar uma solução rapidamente. No entanto, assim como o Randômico, não garante uma solução ótima.
+- **Randômico:** pode encontrar o ponto de parada rapidamente se tiver sorte com suas escolhas aleatórias. No entanto, a probabilidade de encontrar uma solução ótima é baixa, pois não segue uma estratégia específica.
+- **BFS:** procura a solução mais curta em termos de número de movimentos. No melhor caso, se o ponto de parada estiver próximo à posição inicial, o BFS encontrará uma solução ótima em um curto espaço de tempo.
+- **DFS:** se o ponto de parada estiver próximo à posição inicial e a busca seguir em uma direção favorável, o DFS pode encontrar uma solução rapidamente. No entanto, assim como o Randômico, não garante uma solução ótima.
 
 </div>
 
@@ -322,9 +289,9 @@ Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos
 
 <div align="justify">
 
-- **Randômico:** No pior caso, o modelo Randômico pode ficar preso em um loop infinito ou levar um tempo muito longo para encontrar o ponto de parada, já que suas escolhas são aleatórias e não segue uma estratégia determinística.
-- **BFS:** No pior caso, se o ponto de parada estiver localizado em uma área distante da posição inicial e houver muitas paredes no caminho, o BFS pode levar muito tempo para encontrar uma solução, pois explora todos os caminhos possíveis em largura.
-- **DFS:** No pior caso, se o ponto de parada estiver localizado em uma área distante da posição inicial e a busca seguir em direções que levam a caminhos sem saída, o DFS pode se perder em profundidade e demorar para encontrar uma solução.
+- **Randômico:** pode ficar preso em um loop infinito ou levar um tempo muito longo para encontrar o ponto de parada, já que suas escolhas são aleatórias e não segue uma estratégia determinística.
+- **BFS:** se o ponto de parada estiver localizado em uma área distante da posição inicial e houver muitas paredes no caminho, o BFS pode levar muito tempo para encontrar uma solução, pois explora todos os caminhos possíveis em largura.
+- **DFS:** se o ponto de parada estiver localizado em uma área distante da posição inicial e a busca seguir em direções que levam a caminhos sem saída, o DFS pode se perder em profundidade e demorar para encontrar uma solução.
 
 </div>
 
@@ -332,9 +299,9 @@ Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos
 
 <div align="justify">
 
-- **Randômico:** No caso médio, o modelo Randômico pode encontrar o ponto de parada em um tempo razoável, dependendo da distribuição dos elementos na matriz e da localização do ponto de parada. No entanto, a solução encontrada pode não ser ótima.
-- **BFS:** No caso médio, o BFS tem uma boa chance de encontrar uma solução ótima ou próxima disso em um tempo razoável, explorando em largura e encontrando o caminho mais curto.
-- **DFS:** No caso médio, o DFS pode encontrar o ponto de parada em um tempo razoável, mas a solução encontrada pode não ser a mais curta. O DFS é mais propenso a seguir caminhos mais profundos antes de retornar e explorar outras alternativas.
+- **Randômico:** pode encontrar o ponto de parada em um tempo razoável, dependendo da distribuição dos elementos na matriz e da localização do ponto de parada. No entanto, a solução encontrada pode não ser ótima.
+- **BFS:** possui uma boa chance de encontrar uma solução ótima ou próxima disso em um tempo razoável, explorando em largura e encontrando o caminho mais curto.
+- **DFS:** pode encontrar o ponto de parada em um tempo razoável, mas a solução encontrada pode não ser a mais curta. O DFS é mais propenso a seguir caminhos mais profundos antes de retornar e explorar outras alternativas.
 
 Em resumo, o modelo **Randômico** depende muito da sorte e não oferece garantias de encontrar uma solução ótima. O **BFS** é mais eficiente em encontrar soluções ótimas, enquanto o **DFS** pode ser mais rápido em alguns casos, mas não garante uma solução ótima. Dessa forma, compreender as particularidades e limitações de cada algoritmo é fundamental para tomar decisões informadas ao escolher a abordagem mais adequada para a busca em labirintos.
 
