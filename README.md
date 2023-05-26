@@ -127,34 +127,13 @@ Ao final do algoritmo, o tempo de execução é calculado usando a biblioteca [*
 
 ## DFS
 
-Durante a execução do DFS, o algoritmo segue um caminho até alcançar um vértice terminal, ou seja, um vértice que não possui vértices vizinhos não visitados. Quando isso ocorre, o algoritmo retorna ao vértice anterior e continua a explorar os vértices restantes.
+<div align="justify">
 
-O DFS percorre o grafo em profundidade antes de retroceder, o que significa que ele explora um ramo inteiro até atingir um vértice terminal antes de explorar outros ramos. Além disso, durante a execução do algoritmo, podemos armazenar informações adicionais, como o caminho percorrido, para posterior análise ou uso. Isso pode ser feito mantendo uma estrutura de dados adicional, como um vetor de predecessores, que registra de qual vértice cada vértice foi alcançado.
+O código apresentado contém a função <code>DFS</code> (Busca em Profundidade) e a função auxiliar <code>searchCaminho</code> para resolver um labirinto. A função <code>DFS</code> recebe uma matriz **'m'** como entrada, representando o labirinto, e executa a busca em profundidade para encontrar o caminho até o destino. Da mesma forma do BFS, a função começa criando um arquivo de log vazio e inicializando a **'matriz copia'** como uma cópia do labirinto original **'m'**. Em seguida, as variáveis **'x'** e **'y'** são inicializadas como 0, representando as coordenadas atuais no labirinto, e por fim a variável qtd é inicializada como 0 para contar o número de passos. 
 
-Ao final do algoritmo, podemos determinar se um determinado vértice foi alcançado ou não. Além disso, se armazenamos o caminho percorrido, podemos recuperar o caminho completo entre o vértice inicial e um vértice específico.
-
-Abaixo está um exemplo de como resolver o problema do DFS:
-
-1º) Inicialização:
-
-- Escolha um vértice inicial para começar a busca.
-- Crie uma pilha vazia para armazenar os vértices a serem explorados.
-- Marque o vértice inicial como visitado.
-- Insira o vértice inicial na pilha.
-
-2º) Iteração:
-
-- Enquanto a pilha não estiver vazia, repita os seguintes passos:
-	- Remova o vértice do topo da pilha.
-	- Explore todos os vértices vizinhos não visitados do vértice removido.
-		- Para cada vértice vizinho:
-			- Marque o vértice vizinho como visitado.
-			- Insira o vértice vizinho na pilha.
-		- Realize as ações desejadas para cada vértice, como armazenar o caminho percorrido ou calcular distâncias.
-
-3º) Condição de Parada:
-
-- O DFS termina quando a pilha estiver vazia, ou seja, todos os vértices alcançáveis foram visitados.
+Ademais a função também cria uma fila <code>(fila)</code> e uma pilha <code>(pilha)</code> para armazenar as coordenadas a serem exploradas durante a busca. As filas são inicializadas com as coordenadas iniciais <code>(cord_1, cord_2)</code>.
+	
+</div>
 
 <br>
 <p align="center">
