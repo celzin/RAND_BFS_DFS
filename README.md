@@ -132,7 +132,7 @@ Abaixo está um exemplo de como resolver o problema do BFS:
 </p>
 
 <p align="center">
-<em>Gif 1: Exemplo do labirinto **BFS** executando.</em>
+<em>Gif 1: Exemplo do labirinto BFS executando.</em>
 </p>
 
 ## DFS
@@ -174,7 +174,7 @@ Abaixo está um exemplo de como resolver o problema do DFS:
 </p>
 
 <p align="center">
-<em>Gif 2: Exemplo do labirinto **DFS** executando.</em>
+<em>Gif 2: Exemplo do labirinto DFS executando.</em>
 </p>
 
 ## Random
@@ -210,7 +210,7 @@ Em resumo, a solução do problema "Random" pode variar dependendo do contexto e
 </p>
 
 <p align="center">
-<em>Gif 3: Exemplo do labirinto **randômico** executando.</em>
+<em>Gif 3: Exemplo do labirinto randômico executando.</em>
 </p>
 
 
