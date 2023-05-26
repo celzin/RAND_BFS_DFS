@@ -56,6 +56,48 @@ O objetivo final é avaliar a implementação e o desempenho dos modelos de cami
 <em>Imagem 2: Busca em Largura.</em>
 </p>
 	
+</div>
+
+
+# O que é DFS?
+<div align="justify">
+	
+**Depth-First Search (DFS)** ou **Busca em Profundidade**, é um algoritmo de busca em grafo que começa a explorar a partir do vértice raiz e visita um caminho o mais profundo possível antes de retroceder. Em outras palavras, ele explora um ramo inteiro do grafo antes de voltar e explorar outro ramo.
+
+É um método para percorrer todos os vértices de um grafo, visitando um caminho o mais profundo possível antes de retroceder. Ele começa a partir de um vértice inicial (também chamado de raiz) e explora todo o caminho para baixo até chegar a um vértice sem filhos ou a um vértice que já foi visitado. Em seguida, ele retrocede e explora o próximo caminho não visitado até que todos os vértices do grafo tenham sido visitados.
+	
+Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** é que o **DFS** explora um ramo inteiro do grafo antes de retroceder e visitar outro ramo, enquanto o BFS explora todos os vértices a uma determinada distância do vértice inicial antes de passar para o próximo nível de distância.
+	
+</div>
+
+<p align="center">
+<img src="imgs/dfs.png" width="350"/> 
+</p>
+<p align="center">
+<em>Imagem 3: Busca em Profundidade.</em>
+</p>
+
+## Solução do Problema
+
+<div align="justify">
+
+Em resumo, os três tipos de labirintos apresentam abordagens diferentes para a criação e resolução de labirintos que permitem movimentos nas direções **DIREITA**, **ESQUERDA**, **CIMA** e **BAIXO**.
+
+Esses três tipos de labirintos oferecem experiências diferentes para o jogador. O labirinto **Randômico** proporciona uma sensação de descoberta e desafio, o labirinto **BFS** oferece uma busca otimizada pelo destino e o labirinto **DFS** cria um senso de exploração e pode levar a soluções não tão eficientes. Cada um desses labirintos tem suas próprias características e desafios, proporcionando diferentes experiências aos jogadores. Abaixo esses modelos serão melhor detalhados.
+
+</div>
+
+
+## Randômico
+
+<div align="justify">
+
+O código implementado é basicamente o mesmo implementado no trabalho [Labirinto-Recorrente](https://github.com/phpdias/labirinto-recorrente), um algoritmo para gerar e resolver um labirinto aleatório, com algumas adaptações. A função <code>aleatoria</code> gera um labirinto aleatório e a função <code>checkMovimento</code> verifica se um determinado movimento é válido. A lógica principal está em um loop que continua até o jogador alcançar o destino no labirinto. Durante o loop, são feitos movimentos aleatórios e as posições são atualizadas de acordo. Se o jogador encontra um inimigo, o inimigo é removido e o jogador retorna à posição inicial. A quantidade de movimentos é registrada e, ao final, é exibida uma mensagem indicando se o jogador alcançou o destino ou não.
+	
+</div>
+
+## BFS
+
 ```Solução do Problema```
 
 O BFS explora os vértices de um grafo em camadas, começando pelo vértice inicial e expandindo para os vizinhos antes de explorar vértices mais distantes. Ou seja, a medida que o algoritmo avança, ele explora todas as células vizinhas de uma célula antes de avançar para as células mais distantes. Dessa forma, o BFS garante que encontraremos o caminho mais curto entre a célula inicial e qualquer outra célula no labirinto.
@@ -93,27 +135,7 @@ Abaixo está um exemplo de como resolver o problema do BFS:
 <em>Gif 1: Exemplo do labirinto **BFS** executando.</em>
 </p>
 
-	
-</div>
-
-
-# O que é DFS?
-<div align="justify">
-	
-**Depth-First Search (DFS)** ou **Busca em Profundidade**, é um algoritmo de busca em grafo que começa a explorar a partir do vértice raiz e visita um caminho o mais profundo possível antes de retroceder. Em outras palavras, ele explora um ramo inteiro do grafo antes de voltar e explorar outro ramo.
-
-É um método para percorrer todos os vértices de um grafo, visitando um caminho o mais profundo possível antes de retroceder. Ele começa a partir de um vértice inicial (também chamado de raiz) e explora todo o caminho para baixo até chegar a um vértice sem filhos ou a um vértice que já foi visitado. Em seguida, ele retrocede e explora o próximo caminho não visitado até que todos os vértices do grafo tenham sido visitados.
-	
-Uma das principais diferenças entre o algoritmo **DFS** e o algoritmo **BFS** é que o **DFS** explora um ramo inteiro do grafo antes de retroceder e visitar outro ramo, enquanto o BFS explora todos os vértices a uma determinada distância do vértice inicial antes de passar para o próximo nível de distância.
-	
-</div>
-
-<p align="center">
-<img src="imgs/dfs.png" width="350"/> 
-</p>
-<p align="center">
-<em>Imagem 3: Busca em Profundidade.</em>
-</p>
+## DFS
 
 ```Solução do Problema```
 
@@ -155,26 +177,7 @@ Abaixo está um exemplo de como resolver o problema do DFS:
 <em>Gif 2: Exemplo do labirinto **DFS** executando.</em>
 </p>
 
-
-<!--
-## Solução do Problema
-
-<div align="justify">
-
-Em resumo, os três tipos de labirintos apresentam abordagens diferentes para a criação e resolução de labirintos que permitem movimentos nas direções **DIREITA**, **ESQUERDA**, **CIMA** e **BAIXO**.
-
-Esses três tipos de labirintos oferecem experiências diferentes para o jogador. O labirinto **Randômico** proporciona uma sensação de descoberta e desafio, o labirinto **BFS** oferece uma busca otimizada pelo destino e o labirinto **DFS** cria um senso de exploração e pode levar a soluções não tão eficientes. Cada um desses labirintos tem suas próprias características e desafios, proporcionando diferentes experiências aos jogadores. Abaixo esses modelos serão melhor detalhados.
-
-</div>
--->
-
-## Randômico
-
-<div align="justify">
-
-O código implementado é basicamente o mesmo implementado no trabalho [Labirinto-Recorrente](https://github.com/phpdias/labirinto-recorrente), um algoritmo para gerar e resolver um labirinto aleatório, com algumas adaptações. A função <code>aleatoria</code> gera um labirinto aleatório e a função <code>checkMovimento</code> verifica se um determinado movimento é válido. A lógica principal está em um loop que continua até o jogador alcançar o destino no labirinto. Durante o loop, são feitos movimentos aleatórios e as posições são atualizadas de acordo. Se o jogador encontra um inimigo, o inimigo é removido e o jogador retorna à posição inicial. A quantidade de movimentos é registrada e, ao final, é exibida uma mensagem indicando se o jogador alcançou o destino ou não.
-	
-</div>
+## Random
 
 ```Solução do Problema```
 
@@ -209,6 +212,7 @@ Em resumo, a solução do problema "Random" pode variar dependendo do contexto e
 <p align="center">
 <em>Gif 3: Exemplo do labirinto **randômico** executando.</em>
 </p>
+
 
 # Experimentação
 
