@@ -264,7 +264,7 @@ Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos
 
 - **Randômico:** pode encontrar o ponto de parada rapidamente se tiver sorte com suas escolhas aleatórias. No entanto, a probabilidade de encontrar uma solução ótima é baixa, pois não segue uma estratégia específica.
 - **BFS:** procura a solução mais curta em termos de número de movimentos. No melhor caso, se o ponto de parada estiver próximo à posição inicial, o BFS encontrará uma solução ótima em um curto espaço de tempo.
-- **DFS:** se o ponto de parada estiver próximo à posição inicial e a busca seguir em uma direção favorável, o DFS pode encontrar uma solução rapidamente. No entanto, assim como o Randômico, não garante uma solução ótima.
+- **DFS:** se o ponto de parada, a dispósição de paredes for propícia para que a busca siga em uma direção favorável, o DFS pode encontrar uma solução rapidamente.
 
 </div>
 
@@ -286,7 +286,7 @@ Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos
 - **BFS:** possui uma boa chance de encontrar uma solução ótima ou próxima disso em um tempo razoável, explorando em largura e encontrando o caminho mais curto.
 - **DFS:** pode encontrar o ponto de parada em um tempo razoável, mas a solução encontrada pode não ser a mais curta. O DFS é mais propenso a seguir caminhos mais profundos antes de retornar e explorar outras alternativas.
 
-Em resumo, o modelo **Randômico** depende muito da sorte e não oferece garantias de encontrar uma solução ótima. O **BFS** é mais eficiente em encontrar soluções ótimas, enquanto o **DFS** pode ser mais rápido em alguns casos, mas não garante uma solução ótima. Dessa forma, compreender as particularidades e limitações de cada algoritmo é fundamental para tomar decisões informadas ao escolher a abordagem mais adequada para a busca em labirintos.
+Em resumo, o modelo **Randômico** depende muito da sorte e não oferece garantias de encontrar uma solução razoável. O **BFS** é mais eficiente em encontrar soluções ótimas, enquanto o **DFS** pode ser mais rápido em alguns casos, podendo também garantir uma solução ótima. Dessa forma, compreender as particularidades e limitações de cada algoritmo é fundamental para tomar decisões informadas ao escolher a abordagem mais adequada para a busca em labirintos.
 
 </div>
 
