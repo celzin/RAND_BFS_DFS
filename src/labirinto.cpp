@@ -368,7 +368,7 @@ void Labirinto::relatorio(const char *labirintos, double tempo, int qtd_passos){
         fprintf(file, "|                                                                                  |\n");
         fprintf(file, "| => Tempo de execução em segundos:                 [%lf ]                    |\n", tempo);
         fprintf(file, "|                                                                                  |\n");
-        fprintf(file, "| => Quantidade de passos percorridos:              [%5d    ]                    |\n",
+        fprintf(file, "| => Quantidade de passos percorridos:              [%5d    ]                    |\n", qtd_passos);
         fprintf(file, "|                                                                                  |\n");
         fprintf(file, "|                                                                                  |\n");
         fprintf(file, "|==================================================================================|\n\n");
