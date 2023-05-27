@@ -288,6 +288,9 @@ Partindo do contexto de um labirinto representado por uma matriz 50x50, buscamos
 
 Em resumo, o modelo **Randômico** depende muito da sorte e não oferece garantias de encontrar uma solução razoável. O **BFS** é mais eficiente em encontrar soluções ótimas, enquanto o **DFS** pode ser mais rápido em alguns casos, podendo também garantir uma solução ótima. Dessa forma, compreender as particularidades e limitações de cada algoritmo é fundamental para tomar decisões informadas ao escolher a abordagem mais adequada para a busca em labirintos.
 
+	
+Para algumas informações extras, acesse a [Wiki](https://github.com/celzin/RAND_BFS_DFS/wiki) do projeto.
+	
 </div>
 
 # Compilação e Execução 
@@ -327,5 +330,6 @@ Por fim, esse programa possui um arquivo Makefile que realiza todo o procediment
 | -----------------------| ------------------------------------------------------------------------------------------------------|
 |  Celso                 | <a href="https://t.me/celso_vsf"><img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>                                       			       |
 |  Pedro                 | <a href="https://t.me/phpdias"><img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>                                       			       |
+|  Eduardo               | <a href="https://t.me/"><img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>                                       			       |
 
 </div>
